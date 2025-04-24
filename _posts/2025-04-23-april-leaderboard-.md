@@ -10,18 +10,28 @@ In modern AI tools such as ChatGPT, OpenAI has chosen to make their "advanced se
 
 This search allows access to high-quality, relevant content for a given topic and research area. This makes it an excellent source of information for generating prompts later on!
 
-## AI for OSINT
 
-OSINT, or "Open Source Intelligence," refers to information that is publicly available and not classified. Open Source Intelligence is a fundamental element for intelligence operations. While commonly used in the intelligence field, OSINT methods are actually used by everyone. The core principles are the same: cross-reference information to form a clearer picture of a subject or event.
+# AI for OSINT
+
+## Hiding public information is more important than ever as bots can process large amount of data off the regulation rails.
+
+The lack of regulation regarding AI processing of personal data is astonishing.
+
+OSINT, or "Open Source Intelligence," refers to information that is publicly available and not classified. Open Source Intelligence is a fundamental element for intelligence operations. While commonly used in the intelligence field, OSINT methods are actually used in everyday life. The core principles are the same: cross-reference information to form a clearer picture of a subject or event.
 
 When this cross-referencing of information is automated, it can provide quick, high-quality insights. However, it cannot replace human work in crucial cases—missing, inaccurate, biased, or false information can still occur. It’s important to keep in mind that AI doesn’t replace human work but can assist in research.
 
 The advanced search feature in ChatGPT allows users to search the web and extract relevant data from visited pages. This can be particularly useful for researchers, journalists, and anyone needing access to reliable and up-to-date information. This feature is also available in other open-source projects like OpenWebUI.
 
-## Papers and materials
+However, it poses significant risk and concerns about processing personal information.
+
+
+# Papers and materials
 
 https://euroeval.com/extras/radial_plotter/ This tool can be used to compare individual models across each task in the benchmark, using a so-called radial plot.
-![European Language Benchmark LLM](images/radial-plot-20250423.png)
+
+![European Language Benchmark LLM](/images/radial-plot-20250423.png)
+
 
 ## News AI Generated Videos now runs on 6GB GPU (30 seconds of processing time for 10s video)
 
@@ -33,12 +43,13 @@ https://euroeval.com/extras/radial_plotter/ This tool can be used to compare ind
 
 ## Leaderboard:
 
-![alt text](images/leaderboard-20250423.png)
+![Leaderboard as of april 2025](/images/leaderboard-20250423.png "Leaderboard")
+
 
 
 ---
 
-# JLDS 
+# Journée Deep Learning pour la Science (JDLS).
 
 Deep Learning for Science 2025 (France)
 
