@@ -1,7 +1,12 @@
+---
 layout: post
-title: Summer 2025 AI Review — Text & Agents
-tags: \[AI, Summer2025, LLM, Agents, RAG, Enterprise, Robotics, Security]
--------------------------------------------------------------------------
+title: Summer 2025 AI News Review
+tags: [IA, Open-Source, LLM, News]
+---
+
+Sharing some news about advances across models, agents, local stacks, document intelligence, security, and multimodal capabilities. This update offers a tour of the latest progress—from ChatGPT-5 and GPT-OSS20b and 120b and Google’s “banana” models to open-weight frameworks like Qwen3, and from enterprise-scale coding agents to safer, policy-aware workflows.
+
+---
 
 ## TL;DR (Text & Agents first)
 
