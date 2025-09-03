@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Revue des actualités IA – Été 2025
+title: Revue IA - Été 2025
 tags: [IA, Open-Source, LLM, Actualités]
 ---
 
 Partage de quelques nouvelles sur les avancées concernant les modèles, agents, local-first, RAG et capacités multimodales. Cette mise à jour propose un tour d’horizon des derniers progrès — de ChatGPT-5 et GPT-OSS20b/120b aux modèles « banana » de Google, en passant par les frameworks open-weight comme Qwen3, ainsi que des agents de codage.
-
----
 
 ## TL;DR
 
