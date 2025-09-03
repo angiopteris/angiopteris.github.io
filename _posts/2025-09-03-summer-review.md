@@ -1,53 +1,60 @@
 ---
 layout: post
-title: Summer 2025 AI News Review
-tags: [IA, Open-Source, LLM, News]
+title: Revue des actualités IA – Été 2025
+tags: [IA, Open-Source, LLM, Actualités]
 ---
 
-Sharing some news about advances across models, agents, local stacks, document intelligence, security, and multimodal capabilities. This update offers a tour of the latest progress—from ChatGPT-5 and GPT-OSS20b and 120b and Google’s “banana” models to open-weight frameworks like Qwen3, and from enterprise-scale coding agents to safer, policy-aware workflows.
-
----
-
-## TL;DR (Text & Agents first)
-
-* **Frontier models & architecture**: brief highlights on **ChatGPT-5**, Google’s **“banana” models**, and the **HRM** (Hierarchical/Hybrid Reasoning/Memory) method for model architecture—key drivers behind stronger multi-step reasoning, longer context, and tool-use.
-* **Agentic workflows (enterprise)**: repo-scale coding agents (OpenHands), governed RAG (observability, hybrid search, attribution), and eval harnesses shift focus from raw accuracy to latency/cost/deflection and human acceptance.
-* **Local-first stacks**: Ollama desktop + Open WebUI + vLLM for on-prem; open-weight coder/thinking models (e.g., Qwen3 variants) viable on consumer GPUs.
-* **Document intelligence**: Docling + docTR + Unstructured → clean chunks → long-context LLM; measurable gains in summarization, policy extraction, and compliance QA.
-* **Security & safety**: sandbox tools, rate limits, allowlists, and audit trails for agents; prompt-injection hardening becomes table stakes.
-* **Vision/audio (quick hits)**: FLUX for edits/control, Wan/HunyuanVideo for T2V/I2V (FramePack for longer clips); faster-whisper + XTTS-v2/OpenVoice V2 for ASR/TTS.
+Partage de quelques nouvelles sur les avancées concernant les modèles, agents, local-first, RAG et capacités multimodales. Cette mise à jour propose un tour d’horizon des derniers progrès — de ChatGPT-5 et GPT-OSS20b/120b aux modèles « banana » de Google, en passant par les frameworks open-weight comme Qwen3, ainsi que des agents de codage.
 
 ---
 
-## Demo: Google “banana” model (video)
+## TL;DR
+
+* **Modèles & architecture** : Sortie de **ChatGPT-5**, les modèles **« banana »** de Google, et la méthode **HRM** (Hiérarchique/Hybride Raisonnement/Mémoire) pour l’architecture des modèles — moteurs clés d’un raisonnement multi-étapes plus fort, d’un contexte plus long et d’un meilleur usage des outils.
+* **Workflows agentiques (entreprise)** : agents de codage à l’échelle dépôt (OpenHands), RAG (observabilité, recherche hybride, attribution), et bancs d’évaluation qui déplacent le focus de la précision brute vers la latence/le coût et l’acceptation humaine.
+* **“local-first”** : Ollama desktop + Open WebUI + vLLM pour l’on-premise ; modèles open-weight de codage/raisonnement (p. ex. variantes de Qwen3) exploitables sur GPU grand public.
+* **RAG documentaire** : Docling + docTR + Unstructured → segments propres → LLM à long contexte ; Plus simple d'utilisation (exemple ollama)
+* **Sécurité & sûreté** : outils en sandbox, limites de débit, listes d’autorisations et traces d’audit pour les agents ; le durcissement contre l’injection de prompts devient incontournable.
+* **Vision/audio (aperçus rapides)** : FLUX pour l’édition/contrôle, Wan/HunyuanVideo pour T2V/I2V (FramePack pour des clips plus longs) ; faster-whisper + XTTS-v2/OpenVoice V2 pour ASR/TTS.
+
+---
+
+# Leaderboard
+
+![Leaderboard as of September 2025](/images/leaderboard_2025-09-03.png "Leaderboard")
+
+
+## Génération de code
+
+Le nouveau modèle de Open AI ChatGPT5 offre des capacités d'écriture de code plus complexe, plus long et plus cohérent.
+
+Claude 4.1 est aussi capable de se genre de génération mais de moindre qualité.
+
+## Les modèles commerciaux maintiennent un positionnement très compétitif
+
+Encore plus fort que les versions "cheap" les version pro permettent souvent d'améliorer encore les performances. Certains multiplie les abonnements afin d'exploiter des capacités différentes (OpenAI, Ahtropic, etc.)
+
+## Démo : modèle « banana » de Google
 
 <video controls>
   <source src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/ImageEditingGemini_Inline_XZuiDzE.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+  Votre navigateur ne supporte pas la balise vidéo.
 </video>
 
 ---
 
-## Text & Agents: practical notes
+## Local-first
 
-* **Coding & repos**: multi-file refactor and test-repair improved; pair Ghidra headless (for binaries) or static analyzers (for code) with a *Coder/Thinking* LLM for hypotheses and scripting.
-* **RAG patterns**: hybrid lexical+vector, domain chunking, and per-answer tracing. Track cost/latency per query; cache aggressively; prefer small task-tuned models for high-QPS endpoints.
-* **Agent guardrails**: capability scoping (least privilege), filesystem/network sandboxes, tool outcome validation, and structured logs for replay.
-
----
-
-## Minimal stacks
-
-* **Docs** → docTR (OCR) → Docling/Unstructured (structure) → RAG store → long-context LLM (Qwen3\*)
-* **Code** → repo graph + tests → planning agent (OpenHands) → human-in-the-loop PRs
-* **ChatOps** → retrieval tools + function calling → policy-aware agent actions
+* **Docs** → docTR (OCR) → Docling/Unstructured (structure) → RAG store → LLM à long contexte (Qwen3\*)
+* **Code** → graphe de dépôt + tests → agent de planification (OpenHands) → PRs avec humain dans la boucle
+* **MCP** → outils de recherche + appels de fonctions → actions d’agent
 
 ---
 
-## Repos & links
+## Repos & liens
 
-* OpenHands: [https://github.com/All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands)
-* Ollama desktop: [https://ollama.com/blog/desktop-app](https://ollama.com/blog/desktop-app)
-* Qwen3: [https://github.com/QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)
-* Open WebUI: [https://github.com/open-webui/open-webui](https://github.com/open-webui/open-webui)
-* Docling: [https://github.com/DS4SD/docling](https://github.com/DS4SD/docling) • docTR: [https://github.com/mindee/doctr](https://github.com/mindee/doctr) • Unstructured: [https://github.com/Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured)
+* OpenHands : [https://github.com/All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands)  
+* Ollama desktop : [https://ollama.com/blog/desktop-app](https://ollama.com/blog/desktop-app)  
+* Qwen3 : [https://github.com/QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)  
+* Open WebUI : [https://github.com/open-webui/open-webui](https://github.com/open-webui/open-webui)  
+* Docling : [https://github.com/DS4SD/docling](https://github.com/DS4SD/docling) • docTR : [https://github.com/mindee/doctr](https://github.com/mindee/doctr) • Unstructured : [https://github.com/Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured)
