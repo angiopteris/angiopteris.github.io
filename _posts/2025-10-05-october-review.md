@@ -6,11 +6,32 @@ tags: [Mistral, Open Source, Agentic, Actualités, ComfyUI]
 
 Au menu:
 
-Modèles 3D : génération & signaux de perf (et articulations)
-Accès à l’information en 2025 : qualité, usages et régulation (France/UE)
-Anthropic : Claude Sonnet 4.5, écosystème et benchmarks publics
+- Mistral AI Studio : Tentative d'intégration de l’IA avec un écosystème dédié
+- Modèles 3D : génération & signaux de perf (et articulations)
+- IA et information
+- Anthropic : Claude Sonnet 4.5, écosystème et benchmarks publics
+- Sorties sur Ollama : gpt-oss-safeguard & Qwen3-VL
 
 ---
+
+
+### Mistral AI Studio : Un outil pour industrialiser l’IA
+
+**Mistral AI** a présenté *Mistral AI Studio*, une plateforme destinée aux entreprises souhaitant passer de la phase d’expérimentation à celle de la production dans leurs projets d’intelligence artificielle.
+
+Selon l’entreprise, la plupart des équipes disposent déjà de modèles performants et de cas d’usage clairs, mais peinent à les déployer durablement. Les obstacles concernent surtout le suivi des performances, la traçabilité des versions, la collecte de retours utilisateurs et la conformité aux exigences de sécurité et de gouvernance.
+
+**Mistral AI Studio** vise à fournir une couche d’infrastructure commune pour ces besoins.  
+
+La plateforme s’articule autour de trois composantes principales :
+
+- **Observability** : un ensemble d’outils pour inspecter les interactions entre modèles, mesurer la qualité des sorties et relier les résultats aux versions de prompts et de modèles.  
+- **Agent Runtime** : un environnement d’exécution des agents IA, avec gestion des workflows complexes et traçabilité intégrée.  
+- **AI Registry** : un registre central pour les modèles, jeux de données et agents, assurant versioning, contrôle d’accès et auditabilité.
+
+L’objectif affiché est d’offrir aux équipes IA les mêmes garanties de fiabilité, de gouvernance et de supervision que celles habituellement attendues des systèmes logiciels critiques.  
+Mistral AI positionne ainsi Studio comme un outil d’**industrialisation de l’IA**, plutôt qu’un simple environnement d’expérimentation.
+
 
 ## Modèles génératifs 3D
 
@@ -22,9 +43,9 @@ C'est tout sur la 3D ?
 Il semblerait que non, de nouvelles méthodes se penchent sur l'articulation des modèles 3D.
 ![Articulation 3D](/images/october2025-freeart3D-articulatedshapes.png "Articulation 3D")
 
+Comparaison des performances des modèles 3D génératifs
 
-Intégration vidéo images/20251105-1547-20.2456279.mp4
-![Comparaisons des outils génératifs](/images/20251105-1547-20.2456279.gif "https://www.youtube.com/watch?v=QV8TcUg8eNA")
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QV8TcUg8eNA?si=0hM-U5NjPz0BWuwi&amp;start=84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## L'information en 2025
 
@@ -65,6 +86,46 @@ Les laboratoires d'IA développent des moyens de filtrer et sélectionner parmis
 Demain sera-t-il fait d'un océan d'informations ou seul les IA pourront naviguer ? affaire à suivre...
 
 
+## OpenAI dévoile ChatGPT Atlas
 
+Disponible sur MacOS (Windows prochainement), OpenAI concurrence Google Chrome avec un moteur de recherche intégré au package ChatGPT.
+
+<iframe
+  width="560"
+  height="315"
+  src="https://player.vimeo.com/video/1129227761?h=94755e8733"
+  frameborder="0"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
+## Les sorties sur Ollama
+
+**gpt-oss-safeguard** est un modèle open source conçu pour le raisonnement sur la sécurité (modération, conformité, etc.).
+Disponible en plusieurs tailles :
+- 20B : GPU 16 Go
+- 120B : GPU H100
+
+Atouts :
+
+Analyse et applique vos politiques de sécurité
+Raisonnement explicite et ajustable (rapide ou approfondi)
+Licence Apache 2.0 libre et commerciale.
+
+**Qwen3-VL** : modèle vision-langage avancé
+Qwen3-VL est un nouveau modèle vision-langage VLM de la famille Qwen. Il combine compréhension visuelle, textuelle et raisonnement multimodal.
+
+Tailles disponibles : de 2B à 235B paramètres (versions locales et cloud).
+
+
+Agent visuel : comprend et interagit avec des interfaces (boutons, outils, tâches).
+Texte: performances comparables au grand modèle Qwen3-235B.
+Génération de code visuel : transforme images/vidéos en HTML, CSS, JS, etc.
+Contexte long : jusqu’à 1 million de tokens (livres, longues vidéos).
+
+Raisonnement multimodal
+Reconnaissance visuelle étendue (objets, personnages, produits, etc.).
+OCR multilingue (32 langues)
 
 
