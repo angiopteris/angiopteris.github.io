@@ -12,6 +12,8 @@ Au menu:
 - Anthropic : Claude Sonnet 4.5, écosystème et benchmarks publics
 - Sorties sur Ollama : gpt-oss-safeguard & Qwen3-VL
 
+<!--more-->
+
 ---
 
 

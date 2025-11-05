@@ -6,6 +6,8 @@ tags: [IA, Open-Source, LLM, Actualités]
 
 Partage de quelques nouvelles sur les avancées concernant les modèles, agents, local-first, RAG et capacités multimodales. Cette mise à jour propose un tour d’horizon des derniers progrès — de ChatGPT-5 et GPT-OSS20b/120b aux modèles « banana » de Google, en passant par les frameworks open-weight comme Qwen3, ainsi que des agents de codage.
 
+<!--more-->
+
 ## TL;DR
 
 * **Modèles & architecture** : Sortie de **ChatGPT-5**, les modèles **« banana »** de Google, et la méthode **HRM** (Hiérarchique/Hybride Raisonnement/Mémoire) pour l’architecture des modèles — moteurs clés d’un raisonnement multi-étapes plus fort, d’un contexte plus long et d’un meilleur usage des outils.

@@ -9,6 +9,9 @@ tags: [Mistral, Open Source, Agentic, Actualités, ComfyUI]
 Ce financement va conforter la position de Mistral au sein des laboratoires internationaux. Il sera orienté vers la capacité de transfert technologique vers les industriels (CMA CGM). Mistral met l’accent sur la spécialisation et l’accompagnement des entreprises pour remplacer des processus via des agents d’IA et des modèles spécialisés.  
 ComfyUI annonce une levée de fonds de 17 millions pour soutenir sa croissance et son développement comme moteur principal d’édition d’images et de vidéos via des modèles génératifs (entre autres).  
 VastAI fait peau neuve : nouveaux outils pour entraîner des modèles (LoRA) comme Ostris AI Toolkit et Kohya’s GUI.
+
+<!--more-->
+
 ---
 
 ## ComfyUI annonce un financement
