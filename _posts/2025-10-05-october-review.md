@@ -82,6 +82,8 @@ Grâce à l'hybridation thinking/non-thinking et des fonctionnalités intégré.
 
 Les modèles génèrent de plus en plus de données, et les performances augmentent avec la quantité de données générées. Toutefois, comme de de nombreuses études l'ont montré, la qualité des données est essentielle, ainsi il faut sélectionner les données les plus pertinentes pour l'entraînement des modèles.
 
+Reddit poursuit Perplexity pour "scraping à l'échelle industrielle" Reddit a intenté une importante action en justice accusant Perplexity AI et plusieurs sous-traitants de scraping de collecter systématiquement des posts/commentaires Reddit pour l'entraînement de modèles sans autorisation. Implications : Les batailles de licences de données s'intensifient. Les plateformes veulent le contrôle ; les laboratoires d'IA veulent des données d'entraînement. source : [https://www.reddit.com/r/AI_enterprise/comments/1om50xi/ai_news_october_2025_roundup/](https://www.reddit.com/r/AI_enterprise/comments/1om50xi/ai_news_october_2025_roundup/)
+
 Les laboratoires d'IA développent des moyens de filtrer et sélectionner parmis des quantités massives de données.
 Demain sera-t-il fait d'un océan d'informations ou seul les IA pourront naviguer ? affaire à suivre...
 
