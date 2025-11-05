@@ -5,8 +5,11 @@ tags: [Mistral, Open Source, Agentic, Actualités, ComfyUI]
 ---
 
 Au menu:
-- Modèle 3D, génération et comparaison de performances
-- 
+
+Modèles 3D : génération & signaux de perf (et articulations)
+Accès à l’information en 2025 : qualité, usages et régulation (France/UE)
+Anthropic : Claude Sonnet 4.5, écosystème et benchmarks publics
+
 ---
 
 ## Modèles génératifs 3D
@@ -19,6 +22,9 @@ C'est tout sur la 3D ?
 Il semblerait que non, de nouvelles méthodes se penchent sur l'articulation des modèles 3D.
 ![Articulation 3D](/images/october2025-freeart3D-articulatedshapes.png "Articulation 3D")
 
+
+Intégration vidéo images/20251105-1547-20.2456279.mp4
+![Comparaisons des outils génératifs](/images/20251105-1547-20.2456279.gif "https://www.youtube.com/watch?v=QV8TcUg8eNA")
 
 ## L'information en 2025
 
