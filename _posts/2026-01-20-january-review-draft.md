@@ -4,8 +4,6 @@ title: L'IA pour le code - tendance 2025-2026
 tags: [AI, Agents, OpenHands, Refactoring, 2025, 2026, Développement]
 ---
 
-## Sujets abordés
-
 - Mistral revient dans la course avec Devstral 2
 - Tendance 2025 et 2026 sur le code et les agents
 - Analyse de "Automating Massive Parallel AI Coding", présentation d'OpenHands (partenaire de Mistral AI)
