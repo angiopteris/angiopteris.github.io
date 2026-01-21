@@ -25,6 +25,8 @@ Sur OpenRouter, Devstral 2 a une version payante et une version gratuite `mistra
 ![Cursor Retro 2025](../images/20260121-cursor-retro-year-2025.png)
 
 
+![Open router capture](../images/20260121-openrouter-capture-ranking.png)
+
 ## Retrospective 2022-2026:
 
 2022 -  ChatGPT › Sortie le November 30, 2022
