@@ -4,13 +4,12 @@ title: Récap'IA – Octobre 2025
 tags: [Mistral, Open Source, Agentic, Actualités, ComfyUI]
 ---
 
-Au menu:
+Mistral annonce devstral2 montrant une stratégie payante sur l'industrialisation de l'écriture de code.
+Devstral2 offre des modifications fill-in-the-middle dans un répertoire de code basé sur une instruction en language naturel. Rivalisant avec les modèles frontiers comme Sonnet4.5, pas encore Opus4.5. 
+Sur OpenRouter Devstral2 a une version payante et une version gratuite mistralai/devstral-2512:free (Deprecating 27 janvier 2026)
 
-- Mistral AI Studio : Tentative d'intégration de l’IA avec un écosystème dédié
-- Modèles 3D : génération & signaux de perf (et articulations)
-- IA et information
-- Anthropic : Claude Sonnet 4.5, écosystème et benchmarks publics
-- Sorties sur Ollama : gpt-oss-safeguard & Qwen3-VL
+"Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window. Devstral 2 supports exploring codebases and orchestrating changes across multiple files while maintaining architecture-level context. It tracks framework dependencies, detects failures, and retries with corrections—solving challenges like bug fixing and modernizing legacy systems. The model can be fine-tuned to prioritize specific languages or optimize for large enterprise codebases. It is available under a modified MIT license."
+
 
 <!--more-->
 
