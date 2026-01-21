@@ -20,6 +20,8 @@ Sur OpenRouter, Devstral 2 a une version payante et une version gratuite `mistra
 
 <!--more-->
 
+![Mistral on Openrouter](../images/20260121-mistral-on-openrouter.png)
+
 ![Devstral2](../images/20260121-Devstral2-modelsize-vs-SWE-image.png)
 
 ![Cursor Retro 2025](../images/20260121-cursor-retro-year-2025.png)
