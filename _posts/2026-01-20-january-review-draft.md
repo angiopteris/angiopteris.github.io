@@ -162,3 +162,6 @@ Utiliser les dépendances pour assigner les tâches aux agents et suivre la prog
 
 - **Voir la présentation complète** : [YouTube - OpenHands](https://www.youtube.com/watch?v=MKrPPa6lE0s)
 - **Essayer OpenHands** : [github.com/OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)
+
+
+Lucas Boulé, 21 janvier 2026
