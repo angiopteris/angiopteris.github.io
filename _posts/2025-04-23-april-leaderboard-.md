@@ -4,14 +4,11 @@ title: "April 2025 Leverage AI for OSINT"
 tags: [AI, LLM, Open-Source]
 ---
 
-AI can be extremely useful for searching and sorting through large amounts of information on the internet. One of its most natural uses is to search for and extract sources. The internet allows us to make connections between multiple pages, which makes recursion a key issue.
+AI can be extremely useful for searching and sorting through large amounts of information on the internet. One of its most natural uses is to search for and extract sources. The internet allows us to make connections between multiple pages, which makes recursion a key issue. In modern AI tools such as ChatGPT, OpenAI has chosen to make their "advanced search" service available. Although quite basic in reality, this service enables an AI "agent" (an agent is a program that acts autonomously to accomplish a specific task) to search the web and extract relevant information from the pages it visits. This search allows access to high-quality, relevant content for a given topic and research area. This makes it an excellent source of information for generating prompts later on!
 
-In modern AI tools such as ChatGPT, OpenAI has chosen to make their "advanced search" service available. Although quite basic in reality, this service enables an AI "agent" (an agent is a program that acts autonomously to accomplish a specific task) to search the web and extract relevant information from the pages it visits.
+<!--more-->
 
-This search allows access to high-quality, relevant content for a given topic and research area. This makes it an excellent source of information for generating prompts later on!
-
-
-# AI for OSINT
+## AI for OSINT
 
 ## Hiding public information is more important than ever as bots can process large amount of data off the regulation rails.
 

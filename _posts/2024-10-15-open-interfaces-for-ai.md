@@ -6,6 +6,8 @@ tags: [AI, LLMs, Open-Source, Innovation, Interfaces]
 
 This update covers the latest advancements in open-source AI interfaces for chatbot conversations, image generation, tooling, and more.
 
+<!--more-->
+
 ## October 2024 Update on Recent Developments in Open Source AI Interfaces
 
 ## OpenWebUI

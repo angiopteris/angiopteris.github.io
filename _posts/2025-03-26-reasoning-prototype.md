@@ -8,6 +8,8 @@ AI as a General-purpose technology to understand what is going on
 
 General-purpose technologies (GPTs) are technologies that can affect an entire economy (usually at a national or global level).GPTs have the potential to drastically alter societies through their impact on pre-existing economic and social structures. The archetypal examples of GPTs are the steam engine, electricity, and information technology.
 
+<!--more-->
+
 They define a transforming GPT according to the four criteria listed below:
 
     is a single, recognisable generic technology
@@ -21,8 +23,6 @@ Cool AI generated videos:
 <iframe width="100%" height="350" src="https://packaged-media.redd.it/1fjjrjf8ip8e1/pb/m2-res_640p.mp4?m=DASHPlaylist.mpd&v=1&e=1743015600&s=1cdd9b402bb27aae2dc6a541effc955661865f81"></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xa9Sg-j62xY?si=839VdizR_m7x5npY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
----
 
 ## March 2025: AI Highlights
 

@@ -6,6 +6,8 @@ tags: [Thinkering, AI]
 
 As AI services proliferate, companies and individuals are faced with an increasing complexity of providers, microservices, and terms of use. 
 
+<!--more-->
+
 **AI Services drawbacks**
 -------------------------------------
 

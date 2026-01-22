@@ -8,7 +8,7 @@ Partage de quelques nouvelles sur les avancées concernant les modèles, agents,
 
 <!--more-->
 
-## TL;DR
+## TLDR
 
 * **Modèles & architecture** : Sortie de **ChatGPT-5**, les modèles **« banana »** de Google, et la méthode **HRM** (Hiérarchique/Hybride Raisonnement/Mémoire) pour l’architecture des modèles — moteurs clés d’un raisonnement multi-étapes plus fort, d’un contexte plus long et d’un meilleur usage des outils.
 * **Workflows agentiques (entreprise)** : agents de codage à l’échelle dépôt (OpenHands), RAG (observabilité, recherche hybride, attribution), et bancs d’évaluation qui déplacent le focus de la précision brute vers la latence/le coût et l’acceptation humaine.

@@ -8,6 +8,8 @@ If you missed recent AI news and tools for creators, look at Comfyui.
 The Comfyui team is expanding fast as a local-first AI tool for a broad range of AI generation tasks.
 Mainly oriented on image and video, it is also very powerfull to be adaptable to almost all uses of AI.
 
+<!--more-->
+
 Comfyui is hard to master, but will stay the most used tool for AI related creation.
 
 If you already know Comfyui and want deeper information from the creator itself, check out this interview https://www.youtube.com/watch?v=Hc31HotThA0.

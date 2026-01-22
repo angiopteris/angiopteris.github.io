@@ -6,6 +6,8 @@ tags: [AI, local-AI-System, hardware]
 
 If you're reading this, chances are you're planning to build a local AI system with a single RTX 4090. But before you dive in, let me share some valuable insights that can help you save a significant amount of money while achieving your goals.
 
+<!--more-->
+
 CPU-ONLY build will work and will be cheap. but also 10x slower, it is **not intended to be usable for productivity**.
 
 **Lower your Carbon Footprint**

@@ -10,13 +10,9 @@ Sur OpenRouter Devstral2 a une version payante et une version gratuite mistralai
 
 "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window. Devstral 2 supports exploring codebases and orchestrating changes across multiple files while maintaining architecture-level context. It tracks framework dependencies, detects failures, and retries with corrections—solving challenges like bug fixing and modernizing legacy systems. The model can be fine-tuned to prioritize specific languages or optimize for large enterprise codebases. It is available under a modified MIT license."
 
-
 <!--more-->
 
----
-
-
-### Mistral AI Studio : Un outil pour industrialiser l’IA
+## Mistral AI Studio : Un outil pour industrialiser l’IA
 
 **Mistral AI** a présenté *Mistral AI Studio*, une plateforme destinée aux entreprises souhaitant passer de la phase d’expérimentation à celle de la production dans leurs projets d’intelligence artificielle.
 

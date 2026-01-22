@@ -6,6 +6,8 @@ tags: [AI, Open-Source]
 
 Companies developing proprietary AI models are finding themselves in a constant sprint to keep pace with the rapid advancements in open-source alternatives.
 
+<!--more-->
+
 ## August 2024 - Open-source and proprietary AI models
 
 ## Landscape

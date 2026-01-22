@@ -4,9 +4,9 @@ title: New 3D mesh AI is a fine tune LLM for 3D generation
 tags: [AI, LLMs, Open-Source, Innovation, Interfaces]
 ---
 
-New release for 3D mesh generation. A LLM used as the main building block for 3D mesh generation.
+New release for 3D mesh generation. A LLM used as the main building block for 3D mesh generation. Quicktip: Compare AI tools: https://www.blogdumoderateur.com
 
-Quicktip: Compare AI tools: https://www.blogdumoderateur.com
+<!--more-->
 
 ## November 2024 - LLaMA-Mesh and LLMs (again)
 
