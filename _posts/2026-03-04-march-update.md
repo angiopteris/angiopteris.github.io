@@ -4,10 +4,40 @@ title: Récap' IA – Mars 2026
 tags: [IA, Qwen, Agents, Multimodal, Actualités]
 ---
 
-Une semaine chargée avec de nombreuses avancées : éditeurs d'images physiques, avatars VR temps réel, génération de polices vectorielles, modèles Qwen optimisés, robots humanoïdes, et bien plus.
+Une actualité chargée avec de nombreuses avancées : éditeurs d'images physiques, avatars VR temps réel, génération de polices vectorielles, modèles Qwen optimisés, robots humanoïdes, et bien plus.
 
 <!--more-->
 
+
+## TLDR — Comparaison Qwen3.5-397B-A17B vs Claude Sonnet 4.6
+
+| Caractéristique | Qwen3.5-397B-A17B | Claude Sonnet 4.6 |
+|-----------------|-------------------|-------------------|
+| **Contexte** | 262K tokens | 1M tokens |
+| **Prix (input/output)** | $0,39 / $2,34 par M tokens | $3 / $15 par M tokens |
+| **Latence (p50)** | 1,80s | 1,54s |
+| **Throughput (p50)** | 48 tok/s | 40 tok/s |
+| **Modalités input** | texte, image, vidéo | texte, image |
+| **Max output tokens** | 66K | 128K |
+| **Providers** | 5 | 3 |
+
+**Avantages Qwen3.5** :
+- **7,7x moins cher** en input, **6,4x moins cher** en output
+- **Débit supérieur** (48 vs 40 tok/s)
+- **Support vidéo natif** en input
+- **Open-weight** : peut être auto-hébergé
+
+**Avantages Claude Sonnet 4.6** :
+- **Contexte 4x plus large** (1M vs 262K tokens)
+- **Latence légèrement inférieure** (1,54s vs 1,80s)
+- **Output tokens max plus élevés** (128K vs 66K)
+- **Maturité écosystème** : plus de providers établis
+
+---
+
+*Sources : [Qwen Blog](https://qwen.ai/blog?id=qwen3.5) | [Artificial Analysis](https://artificialanalysis.ai)*
+
+Résumé AI-search https://www.youtube.com/watch?v=8grIT-xK50M
 ## VBVR — Raisonnement Vidéo avec WAN2.2
 
 **VBVR** (Very Big Video Reasoning) est un framework ajouté au générateur vidéo WAN2.2 qui permet de raisonner sur des vidéos. Le framework est capable de résoudre des puzzles visuels comme identifier des caractères, formes ou animaux, simuler des phénomènes physiques (équilibre de fluides, rotation 3D) et suivre des instructions séquentielles complexes.
@@ -159,33 +189,3 @@ Le transfert de style est précis grâce au framework modulaire avec LoRAs. Open
 L'architecture hybride compte 397 milliards de paramètres totaux, mais seulement 17 milliards activés par passage — combinant attention linéaire (Gated Delta Networks) et sparse mixture-of-experts pour une efficacité remarquable. La fenêtre de contexte est de 256-1M tokens.
 
 Les performances sont compétitives, rivalisant avec GPT-4.5, Claude 4.5 Opus et Gemini-3 Pro sur de nombreux benchmarks.
-
----
-
-## TLDR — Comparaison Qwen3.5-397B-A17B vs Claude Sonnet 4.6
-
-| Caractéristique | Qwen3.5-397B-A17B | Claude Sonnet 4.6 |
-|-----------------|-------------------|-------------------|
-| **Contexte** | 262K tokens | 1M tokens |
-| **Prix (input/output)** | $0,39 / $2,34 par M tokens | $3 / $15 par M tokens |
-| **Latence (p50)** | 1,80s | 1,54s |
-| **Throughput (p50)** | 48 tok/s | 40 tok/s |
-| **Modalités input** | texte, image, vidéo | texte, image |
-| **Max output tokens** | 66K | 128K |
-| **Providers** | 5 | 3 |
-
-**Avantages Qwen3.5** :
-- **7,7x moins cher** en input, **6,4x moins cher** en output
-- **Débit supérieur** (48 vs 40 tok/s)
-- **Support vidéo natif** en input
-- **Open-weight** : peut être auto-hébergé
-
-**Avantages Claude Sonnet 4.6** :
-- **Contexte 4x plus large** (1M vs 262K tokens)
-- **Latence légèrement inférieure** (1,54s vs 1,80s)
-- **Output tokens max plus élevés** (128K vs 66K)
-- **Maturité écosystème** : plus de providers établis
-
----
-
-*Sources : [Qwen Blog](https://qwen.ai/blog?id=qwen3.5) | [Artificial Analysis](https://artificialanalysis.ai)*
