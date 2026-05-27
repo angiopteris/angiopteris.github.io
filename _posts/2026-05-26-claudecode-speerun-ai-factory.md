@@ -80,7 +80,7 @@ Résultat : Claude voit une **liste courte et filtrée**, ~1 % de la fenêtre de
 
 **③ Déclenchement — décision du modèle, pas un `if`**
 
-L'activation d'un skill dépend de l'appel de `SkillTool` par le LLM, elle est soit impérative en utilsiant /slash ou utilisé si pertinente et disponible.
+L'activation d'une skill dépend de l'appel de `SkillTool` par le LLM : elle est soit impérative en utilisant `/slash`, soit déclenchée automatiquement si la skill est pertinente et disponible.
 
 C'est une **contrainte bloquante** : si Claude reconnaît qu'une skill correspond, il doit émettre un `tool_call` vers `SkillTool` avant toute réponse.
 
@@ -134,7 +134,7 @@ Machine physique (Proxmox)
     └── Workspace cloné, CLAUDE.md configuré
 ```
 
-L'isolation réseau protège la machine hôte et limite la surface d'attaque si un agent file exécuter quelque chose d'inattendu.
+L'isolation réseau protège la machine hôte et limite la surface d'attaque si un agent part exécuter quelque chose d'inattendu.
 
 ### Étape 1 — VM Proxmox (5 min)
 Pour les curieux, le serveur:
@@ -159,19 +159,19 @@ https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso
 
 On utilise balena etcher https://etcher.balena.io/ pour flasher la clé usb.
 
-On suis les étapes d'installations classiques, on choisi une ip, un mot de passe fort (on enregistre le mot de passe dans le gestionnaire de moit de passe), etc...
+On suit les étapes d'installation classiques, on choisit une IP, un mot de passe fort (on l'enregistre dans le gestionnaire de mots de passe), etc.
 On se connecte sur l'UI avec l'user root
 
-Dans l'UI on clique sur le serveur, on va dans "repositories" on desactive pve enterprise, on active pve no subscription: Add > pve-no-subscription
+Dans l'UI on clique sur le serveur, on va dans "repositories" on désactive pve enterprise, on active pve no subscription: Add > pve-no-subscription
 
 On va dans le node shell, 
-apt update & apt upgrade -y
+apt update && apt upgrade -y
 
 
 Si GPU,
 nano /etc/default/grub  
 on ajoute ou modifie la ligne GRUB_CMDLINE_LINUX_DEFAULT en utilisant:
-"GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on" dans /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on" dans /etc/default/grub
 Cela permettra de passer le GPU à la VM
 
 Si VM windows:
@@ -180,7 +180,7 @@ https://www.microsoft.com/fr-fr/software-download/windows11 - Télécharger l’
 on télécharge les drivers windows pour proxmox selon la doc https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers
 https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/?C=M;O=D
 
-Lors de l'isntallation, à l'étape des drivers, on c
+Lors de l'installation, à l'étape des drivers, on c
 
 # VM Configuration 
 
@@ -306,18 +306,18 @@ Pinokio (génération locale par IA seulement si GPU, si pas de GPU > utiliser l
 ### Étape 4 — Git workflow (5 min)
 On ajoute la clé ssh pour github ou on la crée
 
-ssh-keygen -t ed25519 > on la pace dans ~/.ssh/
+ssh-keygen -t ed25519 > on la place dans ~/.ssh/
 On ajoute la clé dans github 
 ...
 
-On fork un repertoire,
-On clone notre repertoire forké localement
+On fork un répertoire,
+On clone notre répertoire forké localement
 On ouvre le dossier avec vscode
 On lance claude, il fait des diffs
 On utilise le commit "cline" pour analyser les diffs avec le repo distant
 on commit/push/sync/etc...
 
-Merci pour la lecture et 
+Merci pour la lecture.
 ##### Happy 2026 #######
 
 Auteur: Lucas Boulé
