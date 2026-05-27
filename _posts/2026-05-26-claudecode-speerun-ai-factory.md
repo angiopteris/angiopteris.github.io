@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Claude Code : Analyse du leak + Speed-run AI Factory en 30 min"
+title: "Claude Code : Analyse + Speed-run AI Factory en 30 min"
 tags: [Claude Code, Proxmox, DevOps, Agents, Sécurité]
 ---
 
