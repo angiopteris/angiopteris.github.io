@@ -4,7 +4,7 @@ title: "Claude Code : Analyse + Speed-run AI Factory en 30 min"
 tags: [Claude Code, Proxmox, DevOps, Agents, Sécurité]
 ---
 
-Deux sujets techniques pour les codeurs : décortiquer le leak du system prompt de Claude Code, puis monter une machine d'AI coding isolée en 30 minutes chrono — Proxmox, VM, réseau cloisonné, environnement prêt à coder.
+Deux sujets techniques : petite analyse de Claude Code, puis montage d'une machine d'AI coding isolée en 30 minutes chrono — Proxmox, VM, réseau cloisonné, environnement prêt à coder ou l'inférence.
 
 meetup https://www.meetup.com/grenoble-open-artificial-intelligence-meetup-group/events/314150636/?slug=grenoble-open-artificial-intelligence-meetup-group&eventId=314150636
 
