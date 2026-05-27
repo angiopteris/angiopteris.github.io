@@ -182,77 +182,60 @@ https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/
 
 Lors de l'installation, à l'étape des drivers, on c
 
-# VM Configuration 
+#### Configuration VM (QEMU)
 
-> QEMU Enabled
-- **Memory:** 25 GiB
-- **Processors:** 6 (1 socket, 6 cores) [host]
-- **BIOS:** OVMF (UEFI)
-- **Display:** VirtIO-GPU (virtio)
-- **Machine:** pc-q35-10.0
-- **SCSI Controller:** VirtIO SCSI single
+| Paramètre | Valeur |
+|-----------|--------|
+| Memory | 25 GiB |
+| Processors | 6 cores (1 socket) — type `host` |
+| BIOS | OVMF (UEFI) |
+| Display | VirtIO-GPU |
+| Machine | pc-q35-10.0 |
+| SCSI Controller | VirtIO SCSI single |
 
-## Storage
-- **Hard Disk (scsi0):**
-  - `LEDISQUE:vm-lenumvm-disk-lenumdudisque`
-  - `iothread=1`
-  - `size=500G`
+#### Stockage
 
-- **EFI Disk:**
-  - `LEDISQUE:vm-lenumvm-disk-lenumdudisque`
-  - `efitype=4m`
-  - `pre-enrolled-keys=1`
-  - `size=1M`
+| Disque | Options |
+|--------|---------|
+| Hard Disk (scsi0) | `iothread=1`, `size=500G` |
+| EFI Disk | `efitype=4m`, `pre-enrolled-keys=1`, `size=1M` |
+| TPM State | `version=v2.0`, `size=4M` |
 
-- **TPM State:**
-  - `LEDISQUE:vm-lenumvm-disk-lenumdudisque`
-  - `size=4M`
-  - `version=v2.0`
+#### Réseau
 
-## Network
-- **Network Device (net0):**
-  - `virtio=LAMACADRESS`
-  - `bridge=LEVNET`
-  - `firewall=1`
+| Paramètre | Valeur |
+|-----------|--------|
+| Driver | `virtio` |
+| Bridge | vnet isolé (SDN) |
+| Firewall | activé |
 
-## PCI Device
-- **hostpci0:** `0000:01:00,pcie=1,x-vga=1`
+#### PCI — GPU passthrough
 
-> 
-- Mode: Raw Device
-- Device: `0000:01:00.0`
-- Primary GPU: Enabled
-- All Functions: Enabled
-- ROM-Bar: Enabled
-- PCI-Express: Enabled
+| Paramètre | Valeur |
+|-----------|--------|
+| Device | `0000:01:00.0` |
+| Mode | Raw Device |
+| Primary GPU | Enabled |
+| All Functions | Enabled |
+| PCI-Express | Enabled |
 
-2: Regle Firewall
-Firewall Rules
+### Étape 2 — Règles Firewall
 
-| # | On | Type | Action | Macro | Interface | Protocol | Source | S.Port | Destination     | D.Port | Log level | Comment |
-|---|----|------|--------|-------|-----------|----------|--------|--------|-----------------|--------|-----------|---------|
-| 0 | ☑  | out  | DROP   |       |           |          |        |        | 192.168.1.0/24  |        | debug     |         |
-| 1 | ☑  | out  | ACCEPT |       | +sdn/vnetu... |      |        |        | 192.168.1.254/32 |        | nolog     |         |
-| 2 | ☑  | in   | ACCEPT |       | +sdn/vnetu... |      |        |        | 192.168.1.254/32 |        | nolog     |         |
+Trois règles simples : bloquer le trafic sortant vers le LAN physique, autoriser uniquement le gateway du vnet.
 
+| # | Type | Action | Destination | Log |
+|---|------|--------|-------------|-----|
+| 0 | out | DROP | 192.168.1.0/24 | debug |
+| 1 | out | ACCEPT | 192.168.1.254/32 (vnet gw) | — |
+| 2 | in | ACCEPT | 192.168.1.254/32 (vnet gw) | — |
 
-# VNets
+#### SDN — VNet & Zone
 
-| ID      | Alias | Zone  | Tag | VLAN Aware | State |
-|---------|--------|--------|-----|-------------|-------|
-| vnetusf |        | unsafe |     |             |       |
+| VNet ID | Zone | Type |
+|---------|------|------|
+| `vnetusf` | unsafe | simple |
 
-# DHCP Ranges
-
-| Start Address | End Address |
-|----------------|----------------|
-| 10.10.10.10 | 10.10.10.100 |
-
-# Zones
-
-| ID     | Type   | MTU | IPAM | Domain | DNS | Reverse DNS | Nodes | State |
-|--------|--------|-----|------|--------|-----|-------------|-------|-------|
-| unsafe | simple |     | pve  |        |     |             |       |       |
+DHCP range : `10.10.10.10` → `10.10.10.100`
 
 
 ```bash
@@ -262,29 +245,6 @@ qm create 200 --name ai-factory --memory 8192 --cores 4 \
   --cdrom local:iso/ubuntu-24.04-server.iso \
   --scsi0 local-lvm:32
 ```
-
-**Pourquoi `vmbr1` et pas `vmbr0` ?** On crée un bridge dédié sans accès direct au LAN physique. La VM sort sur internet via NAT Proxmox, mais elle ne voit pas vos autres machines.
-
-### Étape 2 — Isolation réseau (5 min)
-
-Sur l'hôte Proxmox :
-
-```bash
-# /etc/network/interfaces — ajouter le bridge isolé
-auto vmbr1
-iface vmbr1 inet static
-    address 10.10.10.1/24
-    bridge-ports none
-    bridge-stp off
-    bridge-fd 0
-    post-up iptables -t nat -A POSTROUTING -s 10.10.10.0/24 -o vmbr0 -j MASQUERADE
-    post-up iptables -A FORWARD -i vmbr1 -o vmbr0 -j ACCEPT
-    post-up iptables -A FORWARD -i vmbr0 -o vmbr1 -m state --state RELATED,ESTABLISHED -j ACCEPT
-    # Bloquer l'accès au LAN physique depuis la VM
-    post-up iptables -A FORWARD -i vmbr1 -d 192.168.0.0/16 -j DROP
-```
-
-La VM a internet (npm, pip, git clone), mais pas accès à votre réseau local.
 
 ### Étape 3 — Setup environnement (10 min)
 
