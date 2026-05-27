@@ -6,7 +6,7 @@ tags: [Claude Code, Proxmox, DevOps, Agents, Sécurité]
 
 Deux sujets techniques pour les codeurs : décortiquer le leak du system prompt de Claude Code, puis monter une machine d'AI coding isolée en 30 minutes chrono — Proxmox, VM, réseau cloisonné, environnement prêt à coder.
 
-**La séance sera maintenue à partir de 8 inscrits.**
+meetup https://www.meetup.com/grenoble-open-artificial-intelligence-meetup-group/events/314150636/?slug=grenoble-open-artificial-intelligence-meetup-group&eventId=314150636
 
 <!--more-->
 
