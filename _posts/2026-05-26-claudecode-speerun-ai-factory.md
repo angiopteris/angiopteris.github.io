@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Claude Code : Analyse + Speed-run AI Factory en 30 min"
+title: "Claude Code : Analyse + Speed-run environnement local dev IA 2026"
 tags: [Claude Code, Proxmox, DevOps, Agents, Sécurité]
 ---
 
